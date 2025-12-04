@@ -165,29 +165,34 @@ print(f"{prediction} with {confidence:.2%} confidence")
 
 ##  Project Structure
 ```
-ai-text-detection/
-‚îÇ
-‚îú‚îÄ‚îÄ data/
-‚îÇ   ‚îî‚îÄ‚îÄ complete_dataset.csv          # Full dataset (1,055 samples)
-‚îÇ
-‚îú‚îÄ‚îÄ models/
-‚îÇ   ‚îú‚îÄ‚îÄ classifier_final/             # Best model (99.5% accuracy)
-‚îÇ   ‚îÇ   ‚îú‚îÄ‚îÄ config.json
-‚îÇ   ‚îÇ   ‚îú‚îÄ‚îÄ model.safetensors
-‚îÇ   ‚îÇ   ‚îî‚îÄ‚îÄ tokenizer files
-‚îÇ   ‚îî‚îÄ‚îÄ statistical_detector.pkl      # Statistical model
-‚îÇ
-‚îú‚îÄ‚îÄ results/
-‚îÇ   ‚îú‚îÄ‚îÄ final_project_report.txt      # Comprehensive report
-‚îÇ   ‚îú‚îÄ‚îÄ final_metrics_comparison.csv  # Performance metrics
-‚îÇ   ‚îú‚îÄ‚îÄ final_project_summary.png     # Visualization dashboard
-‚îÇ   ‚îî‚îÄ‚îÄ [other result files]
-‚îÇ
-‚îú‚îÄ‚îÄ detector.py                        # Main detection functions
-‚îú‚îÄ‚îÄ demo.py                           # Gradio web demo
-‚îú‚îÄ‚îÄ requirements.txt                  # Python dependencies
-‚îú‚îÄ‚îÄ README.md                         # This file
-‚îî‚îÄ‚îÄ LICENSE                           # License file
+### Root Directory
+- **README.md** - Complete project documentation
+- **requirements.txt** - Python dependencies
+- **LICENSE** - MIT License
+
+### Main Folders
+
+** data/** - Dataset files
+- `complete_dataset.csv` (1,055 samples: 457 human + 598 AI)
+
+** models/** - Trained models
+- `classifier_final/` - Best model (99.5% accuracy)
+- `statistical_detector.pkl` - Statistical model
+
+** results/** - All evaluation results
+- `final_project_report.txt` - Comprehensive analysis
+- `final_metrics_comparison.csv` - Performance metrics
+- `final_project_summary.png` - Visualization dashboard
+
+** notebooks/** - Jupyter notebooks (8 total)
+- `1_data_collection.ipynb` - Dataset preparation
+- `2_perplexity_detection.ipynb` - Baseline method
+- `3_statistical_detection.ipynb` - Feature analysis
+- `4_classifier_training.ipynb` - Model fine-tuning
+- `5_classifier_detector.ipynb` - Final evaluation
+- `6_adversarial_robustness.ipynb` - Attack testing
+- `7_ensemble_method.ipynb` - Method combination
+- `8_final_demo.ipynb` - Web demo & documentation
 ```
 
 ---
