@@ -54,4 +54,3 @@ This folder contains all Jupyter notebooks used in the project.
 ## Requirements
 
 See `requirements.txt` in the root directory.
-```
