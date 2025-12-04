@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Accuracy](https://img.shields.io/badge/Accuracy-99.5%25-success.svg)]()
 
-> A state-of-the-art AI text detection system achieving 99.5% accuracy with exceptional robustness against adversarial attacks.
+> An AI text detection system achieving 99.5% accuracy with robustness against adversarial attacks.
 
 ---
 
