@@ -1,0 +1,24 @@
+# AI Text Detection System - Requirements
+# Core ML/DL libraries
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Data processing
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web demo
+gradio>=3.50.0
+
+# Text processing
+nltk>=3.8.0
+textstat>=0.7.0
+
+# Optional: For advanced features
+# sentence-transformers>=2.2.0
+# openai>=1.0.0
