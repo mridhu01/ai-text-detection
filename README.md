@@ -1,4 +1,4 @@
-# 🤖 AI Text Detection System
+# AI Text Detection System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -28,7 +28,7 @@
 
 ---
 
-##  Key Achievements
+## Key Achievements
 
 | Metric | Score |
 |--------|-------|
@@ -64,7 +64,7 @@
 
 ---
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 | Method | Accuracy | Precision | Recall | F1 Score | Robustness |
 |--------|----------|-----------|--------|----------|------------|
@@ -75,7 +75,7 @@
 
 ---
 
-## 📊 Results Visualization
+## Results Visualization
 
 ### Performance Comparison
 ![Method Comparison](results/method_comparison.png)
@@ -242,14 +242,14 @@ The project is organized into 8 Jupyter notebooks, each focusing on a specific a
 
 | Notebook | Description | Key Results |
 |----------|-------------|-------------|
-| [1. Data Collection](notebooks/1_data_collection.ipynb) | Dataset preparation and exploration | 1,055 samples |
-| [2. Perplexity Detection](notebooks/2_perplexity_detection.ipynb) | GPT-2 baseline method | 79.1% accuracy |
-| [3. Statistical Detection](notebooks/3_statistical_detection.ipynb) | Linguistic feature analysis | 93.8% accuracy |
-| [4. Classifier Training](notebooks/4_classifier_training.ipynb) | Fine-tuning transformer model | Best model trained |
-| [5. Classifier Detector](notebooks/5_classifier_detector.ipynb) | Final model evaluation | 99.5% accuracy |
-| [6. Adversarial Robustness](notebooks/6_adversarial_robustness.ipynb) | Testing against attacks | 98.5% under attack |
-| [7. Ensemble Method](notebooks/7_ensemble_method.ipynb) | Combining all methods | 100% accuracy |
-| [8. Final Demo](notebooks/8_final_demo.ipynb) | Web interface & documentation | Complete project |
+| [1. Data Collection](notebooks/1_Setup.ipynb) | Dataset preparation and exploration | 1,055 samples |
+| [2. Perplexity Detection](notebooks/2_Data_Collection.ipynb) | GPT-2 baseline method | 79.1% accuracy |
+| [3. Statistical Detection](notebooks/3_Perplexity_Detector.ipynb) | Linguistic feature analysis | 93.8% accuracy |
+| [4. Classifier Training](notebooks/4_Statistical_Detector.ipynb) | Fine-tuning transformer model | Best model trained |
+| [5. Classifier Detector](notebooks/5_Classifier_Detector.ipynb) | Final model evaluation | 99.5% accuracy |
+| [6. Adversarial Robustness](notebooks/6_Adversarial_Robustness.ipynb) | Testing against attacks | 98.5% under attack |
+| [7. Ensemble Method](notebooks/7_Smart_Ensemble.ipynb) | Combining all methods | 100% accuracy |
+| [8. Final Demo](notebooks/8_Final_Demo_and_Analysis.ipynb) | Web interface & documentation | Complete project |
 
 ### Running the Notebooks
 
