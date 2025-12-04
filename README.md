@@ -51,7 +51,7 @@
 - Analyzes 20+ linguistic features
 - Lexical diversity, sentence structure, POS tags
 
-### 3. **Deep Learning Classifier** ‚≠ê **BEST**
+### 3. **Deep Learning Classifier** ‚**BEST**
 - **Accuracy:** 99.5%
 - Fine-tuned DistilBERT/RoBERTa
 - Zero false positives
@@ -164,37 +164,37 @@ print(f"{prediction} with {confidence:.2%} confidence")
 ---
 
 ##  Project Structure
-```
+
 ### Root Directory
 - **README.md** - Complete project documentation
 - **requirements.txt** - Python dependencies
 - **LICENSE** - MIT License
 
-### Main Folders
+###  data/
+Dataset files
+- `complete_dataset.csv` - Full dataset (1,055 samples: 457 human + 598 AI)
 
-** data/** - Dataset files
-- `complete_dataset.csv` (1,055 samples: 457 human + 598 AI)
-
-** models/** - Trained models
+###  models/
+Trained models
 - `classifier_final/` - Best model (99.5% accuracy)
 - `statistical_detector.pkl` - Statistical model
 
-** results/** - All evaluation results
+###  results/
+All evaluation results
 - `final_project_report.txt` - Comprehensive analysis
 - `final_metrics_comparison.csv` - Performance metrics
 - `final_project_summary.png` - Visualization dashboard
 
-** notebooks/** - Jupyter notebooks (8 total)
+###  notebooks/
+Jupyter notebooks (8 total)
 - `1_data_collection.ipynb` - Dataset preparation
-- `2_perplexity_detection.ipynb` - Baseline method
-- `3_statistical_detection.ipynb` - Feature analysis
+- `2_perplexity_detection.ipynb` - Baseline method (79.1% accuracy)
+- `3_statistical_detection.ipynb` - Feature analysis (93.8% accuracy)
 - `4_classifier_training.ipynb` - Model fine-tuning
-- `5_classifier_detector.ipynb` - Final evaluation
-- `6_adversarial_robustness.ipynb` - Attack testing
-- `7_ensemble_method.ipynb` - Method combination
+- `5_classifier_detector.ipynb` - Final evaluation (99.5% accuracy)
+- `6_adversarial_robustness.ipynb` - Attack testing (98.5% robust)
+- `7_ensemble_method.ipynb` - Method combination (100% accuracy)
 - `8_final_demo.ipynb` - Web demo & documentation
-```
-
 ---
 
 ##  Technical Details
@@ -278,22 +278,22 @@ We tested the system against 4 types of adversarial attacks:
 ##  Future Work
 
 ### Short-term
-- [ ] Expand dataset to 10,000+ samples
-- [ ] Test on GPT-4, Claude, Gemini outputs
-- [ ] Add support for longer documents (>2000 words)
-- [ ] Create REST API for production deployment
+- Expand dataset to 10,000+ samples
+- Test on GPT-4, Claude, Gemini outputs
+- Add support for longer documents (>2000 words)
+- Create REST API for production deployment
 
 ### Medium-term
-- [ ] Multilingual support (Spanish, French, Chinese, etc.)
-- [ ] Domain-specific models (academic, creative, technical)
-- [ ] Real-time detection browser extension
-- [ ] Integration with LMS platforms (Canvas, Moodle, Blackboard)
+- Multilingual support (Spanish, French, Chinese, etc.)
+- Domain-specific models (academic, creative, technical)
+- Real-time detection browser extension
+- Integration with LMS platforms (Canvas, Moodle, Blackboard)
 
 ### Long-term
-- [ ] Mobile application (iOS/Android)
-- [ ] Hybrid human-AI content detection
-- [ ] Confidence calibration improvements
-- [ ] Explainable AI features (highlight suspicious passages)
+- Mobile application (iOS/Android)
+- Hybrid human-AI content detection
+- Confidence calibration improvements
+- Explainable AI features (highlight suspicious passages)
 
 ---
 
@@ -332,5 +332,3 @@ Project Link: [https://github.com/mridhu01/ai-text-detection](https://github.com
 Made by Mridhula Senthilkumar
 
 </div>
-
-<img width="462" height="690" alt="image" src="https://github.com/user-attachments/assets/7dcacd32-6e4a-4fc9-a46b-b58644cef15a" />
