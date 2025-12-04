@@ -1,40 +1,39 @@
 # Results
 
-This folder contains all evaluation results and visualizations from the project.
+This folder contains evaluation results, visualizations, and performance metrics.
 
-## Key Visualizations
+## Key Files
 
-### Performance Comparison
-- `method_comparison.png` - Comparison of all detection methods
-- `ensemble_comparison.png` - Ensemble strategy analysis
+### Performance Reports
+- `final_project_report.txt` - Comprehensive project analysis
+- `final_metrics_comparison.csv` - Performance metrics table
+- `project_summary.json` - Machine-readable project summary
 
-### Model Evaluation
-- `confusion_matrix_classifier.png` - Confusion matrix for best model
+### Visualizations
+- `method_comparison.png` - All methods performance comparison
+- `confusion_matrix_classifier.png` - Best model confusion matrix
+- `confusion_matrix_best_ensemble.png` - Ensemble confusion matrix
+- `ensemble_comparison.png` - Ensemble strategies analysis
 - `roc_curve_classifier.png` - ROC curve for classifier
-
-### Adversarial Robustness
 - `adversarial_robustness_analysis.png` - Performance under attacks
+- `feature_importance.png` - Most important statistical features
+- `dataset_visualization.png` - Dataset distribution analysis
 
-### Feature Analysis
-- `feature_importance.png` - Most important features
-- `dataset_visualization.png` - Dataset distribution
+## Key Results
 
-## Performance Metrics
-
-### Final Results
-- **Classifier**: 99.5% accuracy, 100% precision, 99.2% recall
-- **Statistical**: 93.8% accuracy
-- **Perplexity**: 79.1% accuracy
-- **Ensemble**: 100% accuracy on test set
+### Detection Performance
+| Method | Accuracy | Precision | Recall | F1 Score |
+|--------|----------|-----------|--------|----------|
+| Perplexity | 79.1% | 78.6% | 86.6% | 0.824 |
+| Statistical | 93.8% | 96.5% | 92.4% | 0.944 |
+| **Classifier** | **99.5%** | **100%** | **99.2%** | **0.996** |
+| Ensemble | 100% | 100% | 99.2% | 1.000 |
 
 ### Adversarial Robustness
-- **Classifier**: 98.5% (only 1.5% drop)
-- **Statistical**: 81.0% (17.5% drop)
-- **Perplexity**: 50.5% (32.5% drop)
+- Classifier: 98.5% (only 1.5% drop under attack)
+- Statistical: 81.0% (17.5% drop)
+- Perplexity: 50.5% (32.5% drop)
 
-## Reports
+## 📁 File Descriptions
 
-- `classifier_results.json` - Detailed classifier metrics
-- `statistical_detector_results.json` - Statistical method results
-- `perplexity_detector_results.json` - Perplexity baseline results
-- `adversarial_robustness_results.json` - Attack testing results
+All visualizations are high-resolution PNG files suitable for presentations and publications.
