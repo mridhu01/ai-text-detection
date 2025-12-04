@@ -1,29 +1,30 @@
-#  AI Text Detection System
+# 🤖 AI Text Detection System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Accuracy](https://img.shields.io/badge/Accuracy-99.5%25-success.svg)]()
 
-> An AI text detection system achieving 99.5% accuracy with robustness against adversarial attacks.
+> An AI text detection system achieving 99.5% accuracy with exceptional robustness against adversarial attacks.
 
 ---
 
 ##  Table of Contents
-- [Key Achievements](#-key-achievements)
-- [Methods Implemented](#-methods-implemented)
-- [Performance Metrics](#-performance-metrics)
-- [Quick Start](#-quick-start)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Technical Details](#-technical-details)
-- [Adversarial Robustness](#Ô∏è-adversarial-robustness)
-- [Results](#-results)
-- [Limitations](#Ô∏è-limitations)
-- [Future Work](#-future-work)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+- [Key Achievements](#key-achievements)
+- [Methods Implemented](#methods-implemented)
+- [Performance Metrics](#performance-metrics)
+- [Results Visualization](#results-visualization)
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Notebooks](#notebooks)
+- [Technical Details](#technical-details)
+- [Adversarial Robustness](#adversarial-robustness)
+- [Results](#results)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ---
 
@@ -41,29 +42,29 @@
 
 ##  Methods Implemented
 
-### 1. **Perplexity-Based Detection** 
+### 1. Perplexity-Based Detection
 - **Accuracy:** 79.1%
 - Uses GPT-2 perplexity scores
 - Baseline method
 
-### 2. **Statistical Feature Analysis**
+### 2. Statistical Feature Analysis
 - **Accuracy:** 93.8%
 - Analyzes 20+ linguistic features
 - Lexical diversity, sentence structure, POS tags
 
-### 3. **Deep Learning Classifier** ‚**BEST**
+### 3. Deep Learning Classifier ⭐ **BEST**
 - **Accuracy:** 99.5%
 - Fine-tuned DistilBERT/RoBERTa
 - Zero false positives
 
-### 4. **Smart Ensemble**
+### 4. Smart Ensemble
 - **Accuracy:** 100% (test set)
 - Combines all three methods
 - Maximum robustness
 
 ---
 
-##  Performance Metrics
+## 📈 Performance Metrics
 
 | Method | Accuracy | Precision | Recall | F1 Score | Robustness |
 |--------|----------|-----------|--------|----------|------------|
@@ -71,6 +72,47 @@
 | Statistical | 93.8% | 96.5% | 92.4% | 0.944 | 81.0% |
 | **Classifier** | **99.5%** | **100%** | **99.2%** | **0.996** | **98.5%** |
 | Ensemble | 100% | 100% | 99.2% | 1.000 | - |
+
+---
+
+## 📊 Results Visualization
+
+### Performance Comparison
+![Method Comparison](results/method_comparison.png)
+*Accuracy progression from baseline (79.1%) to ensemble (100%)*
+
+### Best Model Performance
+![Classifier Confusion Matrix](results/confusion_matrix_classifier.png)
+*Confusion matrix showing 99.5% accuracy with zero false positives*
+
+![Ensemble Confusion Matrix](results/confusion_matrix_best_ensemble.png)
+*Ensemble achieving 100% accuracy on test set*
+
+### Ensemble Analysis
+![Ensemble Comparison](results/ensemble_comparison.png)
+*Comparison of different ensemble strategies*
+
+### ROC Curves
+![ROC Curve - Classifier](results/roc_curve_classifier.png)
+*ROC curve demonstrating excellent discrimination (AUC = 1.0)*
+
+### Adversarial Robustness
+![Adversarial Robustness](results/adversarial_robustness_analysis.png)
+*Performance under different attack types - Classifier remains 98.5% accurate*
+
+### Feature Analysis
+<details>
+<summary>Click to expand additional visualizations</summary>
+
+#### Feature Importance
+![Feature Importance](results/feature_importance.png)
+*Most important linguistic features for detection*
+
+#### Dataset Distribution
+![Dataset Visualization](results/dataset_visualization.png)
+*Distribution of human vs AI samples*
+
+</details>
 
 ---
 
@@ -103,7 +145,7 @@ print(f"Confidence: {result['confidence']:.2%}")
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/yourusername/ai-text-detection.git
+git clone https://github.com/mridhu01/ai-text-detection.git
 cd ai-text-detection
 ```
 
@@ -121,7 +163,7 @@ nltk.download('averaged_perceptron_tagger')
 
 ---
 
-##  Usage
+## Usage
 
 ### Using Individual Methods
 
@@ -174,16 +216,12 @@ print(f"{prediction} with {confidence:.2%} confidence")
 Dataset files
 - `complete_dataset.csv` - Full dataset (1,055 samples: 457 human + 598 AI)
 
-###  models/
-Trained models
-- `classifier_final/` - Best model (99.5% accuracy)
-- `statistical_detector.pkl` - Statistical model
-
 ###  results/
 All evaluation results
 - `final_project_report.txt` - Comprehensive analysis
 - `final_metrics_comparison.csv` - Performance metrics
-- `final_project_summary.png` - Visualization dashboard
+- `method_comparison.png` - Main visualization dashboard
+- [Additional visualizations and reports]
 
 ###  notebooks/
 Jupyter notebooks (8 total)
@@ -195,6 +233,31 @@ Jupyter notebooks (8 total)
 - `6_adversarial_robustness.ipynb` - Attack testing (98.5% robust)
 - `7_ensemble_method.ipynb` - Method combination (100% accuracy)
 - `8_final_demo.ipynb` - Web demo & documentation
+
+---
+
+##  Notebooks
+
+The project is organized into 8 Jupyter notebooks, each focusing on a specific aspect:
+
+| Notebook | Description | Key Results |
+|----------|-------------|-------------|
+| [1. Data Collection](notebooks/1_data_collection.ipynb) | Dataset preparation and exploration | 1,055 samples |
+| [2. Perplexity Detection](notebooks/2_perplexity_detection.ipynb) | GPT-2 baseline method | 79.1% accuracy |
+| [3. Statistical Detection](notebooks/3_statistical_detection.ipynb) | Linguistic feature analysis | 93.8% accuracy |
+| [4. Classifier Training](notebooks/4_classifier_training.ipynb) | Fine-tuning transformer model | Best model trained |
+| [5. Classifier Detector](notebooks/5_classifier_detector.ipynb) | Final model evaluation | 99.5% accuracy |
+| [6. Adversarial Robustness](notebooks/6_adversarial_robustness.ipynb) | Testing against attacks | 98.5% under attack |
+| [7. Ensemble Method](notebooks/7_ensemble_method.ipynb) | Combining all methods | 100% accuracy |
+| [8. Final Demo](notebooks/8_final_demo.ipynb) | Web interface & documentation | Complete project |
+
+### Running the Notebooks
+
+1. Open in Google Colab or Jupyter
+2. Install requirements: `!pip install -r requirements.txt`
+3. Run cells sequentially
+4. Results saved to `results/` folder
+
 ---
 
 ##  Technical Details
@@ -326,6 +389,19 @@ Project Link: [https://github.com/mridhu01/ai-text-detection](https://github.com
 
 ---
 
+##  Citation
+
+If you use this work in your research, please cite:
+```bibtex
+@misc{ai-text-detection-2024,
+  title={AI Text Detection System: Achieving 99.5% Accuracy with Adversarial Robustness},
+  author={Mridhula Senthilkumar},
+  year={2024},
+  howpublished={\url{https://github.com/mridhu01/ai-text-detection}}
+}
+```
+
+---
 
 <div align="center">
 
